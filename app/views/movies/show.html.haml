@@ -1,0 +1,13 @@
+#container
+  .row
+    .twelve.columns.spacer
+  .row
+    .three.columns
+    .six.columns.main-box-style.index
+    = @movie.name
+    .three.columns
+
+:javascript
+$(window).load(function() {
+    $.backstretch('http://upload.wikimedia.org/wikipedia/commons/0/09/Popcorn02.jpg');
+});

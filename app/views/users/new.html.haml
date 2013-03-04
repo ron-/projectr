@@ -1,0 +1,28 @@
+#container
+  .row
+    .twelve.columns.spacer
+  .row
+    .three.columns
+    .six.columns.main-box-style.index
+      - if @user.errors.any?
+        %ul
+          - @user.errors.full_messages.each do |msg|
+            %li
+              %span.label.alert.radius= msg
+      %h3 Create a new user:
+      = form_for @user do |f|
+        = f.label :name
+        = f.text_field :name, :autofocus => true;
+        = f.label :email
+        = f.text_field :email
+        = f.label :password
+        = f.password_field :password
+        = f.label :password_confirmation
+        = f.password_field :password_confirmation
+        = f.submit :class => 'button radius'
+    .three.columns
+
+  :javascript
+  $(window).load(function() {
+      $.backstretch('http://upload.wikimedia.org/wikipedia/commons/0/09/Popcorn02.jpg');
+  });

@@ -1,0 +1,19 @@
+#container
+  .row
+    .twelve.columns.spacer
+  .row
+    .three.columns
+    .six.columns.main-box-style.index
+      %h3 Please login:
+      = form_tag '/login' do
+        = label_tag 'email'
+        = text_field_tag 'email', nil,  :autofocus => true
+        = label_tag 'password'
+        = password_field_tag 'password'
+        = submit_tag 'Login', :class => 'button radius'
+    .three.columns
+
+  :javascript
+  $(window).load(function() {
+      $.backstretch('http://upload.wikimedia.org/wikipedia/commons/0/09/Popcorn02.jpg');
+  });

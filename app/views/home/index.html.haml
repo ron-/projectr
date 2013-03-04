@@ -1,0 +1,21 @@
+#container
+  .row
+    .twelve.columns.spacer
+  .row
+    - if !@auth
+      .eight.columns.centered.index.main-box-style
+        %h1.huge.text-center projectr
+        %h4.subheader.text-center.orange Classic films from the time just before computer generated dinosaurs fucked everything up.
+        %h4.subheader.text-center.orange Bringing the best of 1970's cinema <br /> back to the large screen.
+        .row
+          .eight.columns.centered
+            %ul.index_buttons
+              %li.left.newlink= link_to('Create account', new_user_path, :class => 'button radius')
+              %li.right.newlink= link_to('Member login', login_path, :class => 'button radius')
+    - else
+      .eight.columns.centered.index.main-box-style
+
+:javascript
+  $(window).load(function() {
+      $.backstretch(big_images, {duration: 3000, fade: 750});
+  });

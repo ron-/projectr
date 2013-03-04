@@ -1,0 +1,54 @@
+/* globally change font to */
+html{
+  color: #000;
+}
+
+.index {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 60px;
+  margin-bottom: 60px;
+}
+
+.newlink{
+  list-style-type: none;
+}
+
+.huge
+{
+  font-size: 6em;
+  font-weight: bolder;
+  letter-spacing: -0.05em;
+  margin: 0px;
+  color: #444333;
+}
+
+.text-center
+{
+  text-align: center;
+}
+
+/* use this for all transparent boxes*/
+
+.main-box-style
+{
+  box-shadow: 2px 2px 10px #555;
+  border-radius: 4px;
+}
+
+.orange
+{
+  color: #444;
+}
+.spacer{
+
+  height: 200px;
+}
+.top-bar{
+  background-color: #444333;
+  border-bottom: 1px solid orange;
+}
+.poster{
+  width: 300px;
+  border: 1px solid black;
+}
+

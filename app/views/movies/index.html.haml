@@ -1,0 +1,21 @@
+#container
+  - @movies.each do |movie|
+    .row
+      .twelve.columns.main-box-style.index.show_film
+        .six.columns
+          %h1= movie.name + ' ' + '(' + movie.release_year + ')'
+          .left= movie.director
+          .left= movie.actors
+          .left= movie.description
+          .left= movie.runtime
+        .right= image_tag movie.poster, :class => 'poster'
+
+    .row
+      .twelve.columns
+
+
+
+:javascript
+$(window).load(function() {
+    $.backstretch('http://upload.wikimedia.org/wikipedia/commons/0/09/Popcorn02.jpg');
+});
